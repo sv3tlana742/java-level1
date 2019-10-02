@@ -20,6 +20,6 @@ public class Main {
     }
 
     private static void debug(boolean result) {
-        System.out.println("=> " + (result ? "true" : "false"));
+        System.out.println("=> " + result);
     }
 }
