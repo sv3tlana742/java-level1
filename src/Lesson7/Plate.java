@@ -16,8 +16,7 @@ public class Plate {
     public void info(){
         System.out.println("Food: " + food);
     }
+    public void addFood(){
 
-    public void addFood() {
-        if()
     }
 }

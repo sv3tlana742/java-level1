@@ -8,14 +8,14 @@ public class Cat {
     public Cat (String name, int appetite){
         this.name = name;
         this.appetite = appetite;
-        satiety = false;
     }
 
     public void eat(Plate p){
-        if (p.decreaseFood(appetite) != satiety) {
+        if (p.decreaseFood(appetite) != false) {
             satiety = true;
             System.out.println("Кот " + name + " съел " + appetite + " еды" + " => " + satiety);
-        } else{
+        } else {
+            satiety = false;
             System.out.println("Коту " + name + " не хватило еды"  + " => " + satiety);
         }
     }
