@@ -2,7 +2,7 @@ package Lesson7;
 
 public class Main {
     public static void main(String[] args) {
-        Plate plate = new Plate(32);
+        Plate plate = new Plate(30);
         Cat[] cats = new Cat[5];
         cats[0] = new Cat("Шуруп", 15);
         cats[1] = new Cat("Компот", 20);
@@ -13,11 +13,6 @@ public class Main {
             plate.info();
             cat.eat(plate);
         }
-//        Cat cat = new Cat("Шуруп",10);
-//        plate.info();
-//        cat.eat(plate);
-//        plate.info();
-//        cat.eat(plate);
-//        plate.info();
+        plate.addFood(20);
     }
 }

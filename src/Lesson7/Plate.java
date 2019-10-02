@@ -16,7 +16,8 @@ public class Plate {
     public void info(){
         System.out.println("Food: " + food);
     }
-    public void addFood(){
-
+    public void addFood(int n){
+        food += n;
+        System.out.println("В тарелку добавили " + n + " еды");
     }
 }
