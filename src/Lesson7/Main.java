@@ -2,13 +2,16 @@ package Lesson7;
 
 public class Main {
     public static void main(String[] args) {
-        Cat cat = new Cat("Шуруп", 15);
-        Cat cat2 = new Cat("Компот", 20);
         Plate plate = new Plate(30);
-        plate.info();
-        cat.eat(plate);
-        plate.info();
-        cat2.eat(plate);
-        plate.info();
+        Cat[] cats = new Cat[5];
+        cats[0] = new Cat("Шуруп", 15);
+        cats[1] = new Cat("Компот", 20);
+        cats[2] = new Cat("Зажик", 10);
+        cats[3] = new Cat("Бантик", 25);
+        cats[4] = new Cat("Коржик", 15);
+        for (Cat cat: cats) {
+            cat.eat(plate);
+            plate.info();
+        }
     }
 }

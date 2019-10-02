@@ -2,7 +2,6 @@ package Lesson7;
 
 public class Plate {
     private int food;
-    private boolean empty = false;
 
     public Plate(int food) {
         this.food = food;
