@@ -1,25 +1,20 @@
 package Lesson7;
 
-import javax.jws.soap.SOAPMessageHandlers;
-
 public class Plate {
     private int food;
-    private boolean empty;
+    private boolean empty = false;
 
     public Plate(int food) {
         this.food = food;
     }
-    public void decreaseFood(int n) {
-//        if (food >= n){
+    public boolean decreaseFood(int n) {
+        if (food >= n){
             food -= n;
-//        }
+            return true;
+        } return false;
     }
 
     public void info(){
         System.out.println("Food: " + food);
-    }
-
-    public boolean isEmpty(){
-        return empty;
     }
 }
