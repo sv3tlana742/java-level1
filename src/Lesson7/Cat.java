@@ -11,7 +11,7 @@ public class Cat {
     }
 
     public void eat(Plate p){
-        if (p.decreaseFood(appetite) != false) {
+        if (p.decreaseFood(appetite)) {
             satiety = true;
             System.out.println("Кот " + name + " съел " + appetite + " еды" + " => " + satiety);
         } else {
